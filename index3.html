@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        'use strict'
+        let result1 = 10 + 10 + "10"; //Последняя десятка прибавляется к сумме первых двух в качестве строки
+        let result2 = 10 + "10" + 10; //'10' в середине превращает в строку все выражение
+        let result3 = 10 + 10 + +"10"; //Второй минус преобразует '10' в число, в результате получаем сумму 30
+        let result4 = 10 / -""; // Под пустой строкой подразумевается 0. В результате деления на -0: -бесконечность
+        let result5 = 10 / +"2,5"; // Запятая вместо точки не позволяет принять выражение за число. В результате деления - NaN
+        console.log(result1, result2, result3, result4, result5)
+    </script>
+</body>
+
+</html>
