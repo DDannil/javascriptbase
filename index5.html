@@ -11,78 +11,9 @@
 <body>
     <script>
         'use strict'
-        /**
-         * Функция округляет число до десятых
-         * @param {number} a 
-         * @param {number} b 
-         * @returns 
-         */
-        function roundToTenths(number) {
-            return parseInt(number * 10) / 10;
+        for (let i = 'x'; i.length < 21; i += 'x') {
+            console.log(i)
         }
-
-        /**
-         * Функция складывает два числа
-         * @param {number} a 
-         * @param {number} b 
-         * @returns 
-         */
-        function addition(a, b) {
-            return a + b
-        }
-
-        /**
-         * Функция вычитает из числа а число b
-         * @param {number} a 
-         * @param {number} b 
-         * @returns 
-         */
-        function subtraction(a, b) {
-            return a - b
-        }
-
-        /**
-         * Функция умножает число а на число b
-         * @param {number} a 
-         * @param {number} b 
-         * @returns 
-         */
-
-        function multiplication(a, b) {
-            return a * b
-        }
-
-        /**
-         * Функция делит число а на число b
-         * @param {number} a 
-         * @param {number} b 
-         * @returns 
-         */
-
-        function division(a, b) {
-            return a / b
-        }
-
-        function mathOperation(arg1, arg2, operation) {
-            switch (operation) {
-                case 'addition':
-                    return addition(arg1, arg2);
-                    break;
-                case 'subtraction':
-                    return subtraction(arg1, arg2);
-                    break;
-                case 'division':
-                    return division(arg1, arg2);
-                    break;
-                case 'multiplication':
-                    return multiplication(arg1, arg2);
-                    break;
-            }
-        }
-        alert(mathOperation(2, 4, 'addition'));
-        alert(mathOperation(2, 4, 'subtraction'));
-        alert(mathOperation(2, 4, 'division'));
-        alert(mathOperation(2, 4, 'multiplication'));
     </script>
 </body>
 

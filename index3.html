@@ -11,18 +11,25 @@
 <body>
     <script>
         'use strict'
-        let a = Number(prompt('Введите первое число'));
-        let b = Number(prompt('Введите второе число'));
-        if (a >= 0 && b >= 0) {
-            alert('Разность чисел равна: ' + (a - b));
-        } else if (a < 0 && b < 0) {
-            alert('Произведение чисел равно: ' + (a * b));
-        } else if (a >= 0 && b < 0 || a < 0 && b >= 0) {
-            let sum = a + b
-            alert('Сумма чисел равна: ' + sum);
-        } else {
-            alert('Это не числа!')
-        }
+        const products = [
+            {
+                id: 3,
+                price: 200,
+            },
+            {
+                id: 4,
+                price: 900,
+            },
+            {
+                id: 1,
+                price: 1000,
+            },
+        ];
+
+        products.forEach(element => {
+            element.price = element.price * 0.85
+        })
+        console.log(products); 
     </script>
 </body>
 
