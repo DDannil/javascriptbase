@@ -11,25 +11,21 @@
 <body>
     <script>
         'use strict'
-        const products = [
-            {
-                id: 3,
-                price: 200,
-            },
-            {
-                id: 4,
-                price: 900,
-            },
-            {
-                id: 1,
-                price: 1000,
-            },
-        ];
+        let number = Number(prompt('Введите любое целое число от 0 до 999'));
 
-        products.forEach(element => {
-            element.price = element.price * 0.85
-        })
-        console.log(products); 
+        function NumberToObject(number) {
+            if (!Number.isInteger(number) || number < 0 || number > 999) {
+                alert('Данное число не удовлетворяет условиям!');
+                return {};
+            }
+            return Object = {
+                units: number % 10,
+                tens: Math.floor(number / 10) % 10,
+                hundreds: Math.floor(number / 100),
+            }
+        }
+
+        console.log(NumberToObject(number));
     </script>
 </body>
 
